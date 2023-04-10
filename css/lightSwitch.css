@@ -1,0 +1,20 @@
+#light {
+    height: 300px;
+    width: 300px;
+}
+
+.lightOn{
+    background-color: yellow;
+    color: red;
+    border-color: black;
+    border-style: dashed;
+    border-width: 3px;
+}
+
+.lightOff{
+    background-color: black;
+    color: yellow;
+    border-color: yellow;
+    border-style: dashed;
+    border-width: 3px;
+}
