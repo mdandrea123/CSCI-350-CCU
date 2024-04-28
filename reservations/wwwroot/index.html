@@ -1,0 +1,27 @@
+<script>
+    async function getReservations(){
+        let response = await fetch("https://localhost:5001/reservations");
+        let jsonData = await response.json();
+        let data = JSON.stringify(jsonData);
+        
+        console.log(data);
+        document.getElementById("p_reservations").innerHTML = data;
+    }
+
+    function toggleColor(){
+        let p = document.getElementById("p_sandbox");
+        if(p.style.backgroundColor == "green"){
+            p.style.backgroundColor = "blue";
+        }else if (p.style.backgroundColor == "blue"){
+            p.style.backgroundColor = "green";
+        }else{
+            p.style.backgroundColor = "green";
+        }
+    }
+</script>
+
+<p id="p_reservations"> Get all reservations </p>
+<p> <button onclick="getReservations()"> Click to show reservations </button> </p>
+
+<p id="p_sandbox"> Sandbox </p>
+<p><button onclick="toggleColor()">Click to change color above</button></p>

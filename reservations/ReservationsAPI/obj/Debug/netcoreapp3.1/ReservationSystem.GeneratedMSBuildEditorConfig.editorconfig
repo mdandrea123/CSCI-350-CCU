@@ -1,0 +1,5 @@
+is_global = true
+build_property.RootNamespace = ReservationSystem
+build_property.ProjectDir = /Users/michaeldandrea/Desktop/Git Repos/CSCI-350-CCU/reservations-mdandrea123/ReservationsAPI/
+build_property.EnableComHosting = 
+build_property.EnableGeneratedComInterfaceComImportInterop = 
